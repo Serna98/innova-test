@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Radio+Canada&family=Roboto&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>innova</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="newPersonalizationPanel" class="personalize-block col-md-8 col-md-offset-2">
+        <div class="row">
+            <div class="col-xs-4 personalize-title text-left">
+                Seleccionar</div>
+            <div class="col-xs-8 form-group personalize-options">
+                <div>
+                    <input type="radio" class="tab" id="option-original" name="personalizationGroup" value="original"
+                        checked="">
+                    <label for="original">Sin Personalizar</label>
+                </div>
+                <div>
+                    <input type="radio" class="tab" id="option-PersonalizaciónSNMOficialFrontalHombre"
+                        name="personalizationGroup" value="PersonalizaciónSNMOficialFrontalHombre">
+                    <label for="PersonalizaciónSNMOficialFrontalHombre">Personalización + Frontal (+$499.00)</label>
+                </div>
+                <div>
+                    <input type="radio" class="tab" id="option-PersonalizaciónSNMOficialHombre"
+                        name="personalizationGroup" value="PersonalizaciónSNMOficialHombre">
+                    <label for="PersonalizaciónSNMOficialHombre">Personalización (+$399.00)</label>
+                </div>
+                <div>
+                    <input type="radio" class="tab" id="option-PersonalizaciónSNMReplica" name="personalizationGroup"
+                        value="PersonalizaciónSNMReplica">
+                    <label for="PersonalizaciónSNMReplica">Personalización Replica (+$199.00)</label>
+                </div>
+                <div>
+                    <input type="radio" class="tab" id="option-PersonalizaciónSNMReplicaFrontal"
+                        name="personalizationGroup" value="PersonalizaciónSNMReplicaFrontal">
+                    <label for="PersonalizaciónSNMReplicaFrontal">Personalización Replica + Frontal (+$249.00)</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="row personalize-groups" style="display: none;">
+            <div id="PersonalizaciónSNMOficialFrontalHombre" class="personalizeGroup" style="display: none;">
+                <div id="CENTER">
+                    <div id="00000U40" class="personalizeForm" data-personalizeproduct="000000000000006251">
+                        <div id="CENTER">
+                            <div class="personalize-form-container">
+                                <div class="personalize-form-title">Personalización Frontal (+$499.00)</div>
+                            </div>
+                            <div class="form-group">
+                                <div class="personalize-field-title">Nombre</div>
+                                <input type="text" class="personalizeField personalize-text-field" id="00000U3O"
+                                    name="Nombre" maxlength="13" title="" data-fieldtype="TextPersonalizeField"
+                                    data-orderentrylabel="Nombre" data-required="true" data-personalizeproduct="">
+
+                                <div id="00000U3O-error" class="has-error hidden">
+                                    <div class="help-block"><span>Campo obligatorio!</span></div>
+                                </div>
+                            </div>
+
+                            <script type="text/javascript">
+                                $("#00000U3O").on("input", function () {
+
+                                    var allowSpecChars = false;
+                                    var onlyCapitalLetters = true;
+
+                                    if (!allowSpecChars) {
+                                        var text = $(this).val();
+                                        text = text.replace(/[-[\]{}()*+?.,\\^$|#\\/~`!@%&_=:;<>\'\"]/g, '');
+                                        $(this).val(text);
+                                    }
+
+                                    if (onlyCapitalLetters) {
+                                        $(this).val($(this).val().toUpperCase());
+                                    }
+                                });
+                            </script>
+                            <div class="form-group">
+                                <div class="personalize-field-title">Numero</div>
+                                <input type="number" class="personalizeField personalize-text-field" id="00000U3P"
+                                    name="Numero" title="" data-maxlength="2" data-fieldtype="NumberPersonalizeField"
+                                    data-orderentrylabel="Numero" data-required="true" data-personalizeproduct="">
+
+                                <div id="00000U3P-error" class="has-error hidden">
+                                    <div class="help-block"><span>Campo obligatorio!</span></div>
+                                </div>
+                            </div>
+
+                            <script type="text/javascript">
+                                $("#00000U3P").on("input", function () {
+                                    var maxlen = $(this).data("maxlength");
+                                    if (maxlen) {
+                                        this.value = this.value.slice(0, maxlen);
+                                    }
+                                });
+                            </script>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div id="PersonalizaciónSNMOficialHombre" class="personalizeGroup" style="display: none;">
+                <div id="CENTER">
+                    <div id="00000U41" class="personalizeForm" data-personalizeproduct="000000000000006252">
+                        <div id="CENTER">
+                            <div class="personalize-form-container">
+                                <div class="personalize-form-title">Personalización (+$399.00)</div>
+                            </div>
+                            <div class="form-group">
+                                <div class="personalize-field-title">Nombre</div>
+                                <input type="text" class="personalizeField personalize-text-field" id="00000U3Q"
+                                    name="Nombre" maxlength="13" title="" data-fieldtype="TextPersonalizeField"
+                                    data-orderentrylabel="Nombre" data-required="true" data-personalizeproduct="">
+
+                                <div id="00000U3Q-error" class="has-error hidden">
+                                    <div class="help-block"><span>Campo obligatorio!</span></div>
+                                </div>
+                            </div>
+
+                            <script type="text/javascript">
+                                $("#00000U3Q").on("input", function () {
+
+                                    var allowSpecChars = false;
+                                    var onlyCapitalLetters = true;
+
+                                    if (!allowSpecChars) {
+                                        var text = $(this).val();
+                                        text = text.replace(/[-[\]{}()*+?.,\\^$|#\\/~`!@%&_=:;<>\'\"]/g, '');
+                                        $(this).val(text);
+                                    }
+
+                                    if (onlyCapitalLetters) {
+                                        $(this).val($(this).val().toUpperCase());
+                                    }
+                                });
+                            </script>
+                            <div class="form-group">
+                                <div class="personalize-field-title">Numero</div>
+                                <input type="number" class="personalizeField personalize-text-field" id="00000U3R"
+                                    name="Numero" title="" data-maxlength="2" data-fieldtype="NumberPersonalizeField"
+                                    data-orderentrylabel="Numero" data-required="true" data-personalizeproduct="">
+
+                                <div id="00000U3R-error" class="has-error hidden">
+                                    <div class="help-block"><span>Campo obligatorio!</span></div>
+                                </div>
+                            </div>
+
+                            <script type="text/javascript">
+                                $("#00000U3R").on("input", function () {
+                                    var maxlen = $(this).data("maxlength");
+                                    if (maxlen) {
+                                        this.value = this.value.slice(0, maxlen);
+                                    }
+                                });
+                            </script>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div id="PersonalizaciónSNMReplica" class="personalizeGroup" style="display: none;">
+                <div id="CENTER">
+                    <div id="00000UVI" class="personalizeForm" data-personalizeproduct="000000000000006254">
+                        <div id="CENTER">
+                            <div class="personalize-form-container">
+                                <div class="personalize-form-title">Personalización Replica (+$199.00)</div>
+                            </div>
+                            <div class="form-group">
+                                <div class="personalize-field-title">Nombre</div>
+                                <input type="text" class="personalizeField personalize-text-field" id="00000UVA"
+                                    name="Nombre" maxlength="13" title="" data-fieldtype="TextPersonalizeField"
+                                    data-orderentrylabel="Nombre" data-required="true" data-personalizeproduct="">
+
+                                <div id="00000UVA-error" class="has-error hidden">
+                                    <div class="help-block"><span>Campo obligatorio!</span></div>
+                                </div>
+                            </div>
+
+                            <script type="text/javascript">
+                                $("#00000UVA").on("input", function () {
+
+                                    var allowSpecChars = false;
+                                    var onlyCapitalLetters = true;
+
+                                    if (!allowSpecChars) {
+                                        var text = $(this).val();
+                                        text = text.replace(/[-[\]{}()*+?.,\\^$|#\\/~`!@%&_=:;<>\'\"]/g, '');
+                                        $(this).val(text);
+                                    }
+
+                                    if (onlyCapitalLetters) {
+                                        $(this).val($(this).val().toUpperCase());
+                                    }
+                                });
+                            </script>
+                            <div class="form-group">
+                                <div class="personalize-field-title">Numero</div>
+                                <input type="number" class="personalizeField personalize-text-field" id="00000UVB"
+                                    name="Numero" title="" data-maxlength="2" data-fieldtype="NumberPersonalizeField"
+                                    data-orderentrylabel="Numero" data-required="true" data-personalizeproduct="">
+
+                                <div id="00000UVB-error" class="has-error hidden">
+                                    <div class="help-block"><span>Campo obligatorio!</span></div>
+                                </div>
+                            </div>
+
+                            <script type="text/javascript">
+                                $("#00000UVB").on("input", function () {
+                                    var maxlen = $(this).data("maxlength");
+                                    if (maxlen) {
+                                        this.value = this.value.slice(0, maxlen);
+                                    }
+                                });
+                            </script>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div id="PersonalizaciónSNMReplicaFrontal" class="personalizeGroup" style="display: none;">
+                <div id="CENTER">
+                    <div id="00000UVJ" class="personalizeForm" data-personalizeproduct="000000000000006253">
+                        <div id="CENTER">
+                            <div class="personalize-form-container">
+                                <div class="personalize-form-title">Personalización Replica + Frontal (+$249.00)</div>
+                            </div>
+                            <div class="form-group">
+                                <div class="personalize-field-title">Nombre</div>
+                                <input type="text" class="personalizeField personalize-text-field" id="00000UVC"
+                                    name="Nombre" maxlength="13" title="" data-fieldtype="TextPersonalizeField"
+                                    data-orderentrylabel="Nombre" data-required="true" data-personalizeproduct="">
+
+                                <div id="00000UVC-error" class="has-error hidden">
+                                    <div class="help-block"><span>Campo obligatorio!</span></div>
+                                </div>
+                            </div>
+
+                            <script type="text/javascript">
+                                $("#00000UVC").on("input", function () {
+
+                                    var allowSpecChars = false;
+                                    var onlyCapitalLetters = true;
+
+                                    if (!allowSpecChars) {
+                                        var text = $(this).val();
+                                        text = text.replace(/[-[\]{}()*+?.,\\^$|#\\/~`!@%&_=:;<>\'\"]/g, '');
+                                        $(this).val(text);
+                                    }
+
+                                    if (onlyCapitalLetters) {
+                                        $(this).val($(this).val().toUpperCase());
+                                    }
+                                });
+                            </script>
+                            <div class="form-group">
+                                <div class="personalize-field-title">Numero</div>
+                                <input type="number" class="personalizeField personalize-text-field" id="00000UVD"
+                                    name="Numero" title="" data-maxlength="2" data-fieldtype="NumberPersonalizeField"
+                                    data-orderentrylabel="Numero" data-required="true" data-personalizeproduct="">
+
+                                <div id="00000UVD-error" class="has-error hidden">
+                                    <div class="help-block"><span>Campo obligatorio!</span></div>
+                                </div>
+                            </div>
+
+                            <script type="text/javascript">
+                                $("#00000UVD").on("input", function () {
+                                    var maxlen = $(this).data("maxlength");
+                                    if (maxlen) {
+                                        this.value = this.value.slice(0, maxlen);
+                                    }
+                                });
+                            </script>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
